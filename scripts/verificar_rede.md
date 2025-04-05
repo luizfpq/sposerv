@@ -6,7 +6,9 @@ Claro! Vou te guiar passo a passo para configurar manualmente o IP em uma máqui
 #### Passo 1: Obter as configurações de rede atuais
 Antes de configurar o IP manualmente, você precisará verificar as configurações atuais da rede usando o script `verificar_rede.sh`.
 Para isso, o arquivo precisa ser um executável, vamos permitir essa configuração com o comando:
-`chmod +x verificar_rede.sh`
+```bash
+chmod +x verificar_rede.sh
+```
 
 
 1. **Execute o script `verificar_rede.sh`**:
