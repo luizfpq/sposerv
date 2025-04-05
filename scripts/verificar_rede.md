@@ -50,15 +50,16 @@ O arquivo `/etc/network/interfaces` controla a configuração de rede das interf
    # Configuração de rede estática para interface eth0
    auto eth0
    iface eth0 inet static
-       address 192.168.1.100         # Substitua pelo IP que deseja usar
-       netmask 255.255.255.0         # Substitua pela máscara de rede obtida
-       gateway 192.168.1.1          # Substitua pelo gateway obtido
-       dns-nameservers 8.8.8.8      # Substitua pelos servidores DNS obtidos
+       address 192.168.1.100
+       netmask 255.255.255.0
+       gateway 192.168.1.1
+       dns-nameservers 8.8.8.8
    ```
 
    **Observações**:
    - `eth0` é o nome da interface de rede. Se sua interface tiver outro nome (por exemplo, `enp0s3` ou `wlan0`), substitua `eth0` pelo nome correto da sua interface. Você pode descobrir o nome da interface com o comando `ip a`.
    - `address`, `netmask`, `gateway` e `dns-nameservers` devem ser preenchidos com os valores obtidos do script.
+   - EVITE USAR O COPIAR E COLAR PARA NÃO INSERIR ESPAÇOES DESNECESSÁRIOS EM SEU ARQUIVO, QUE PODEM DANIFICAR A CONFIGURAÇÃO.
 
 3. **Salvar e sair do editor**:
    
